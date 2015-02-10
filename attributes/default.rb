@@ -21,7 +21,8 @@ default["yad"]["packages"] = %w(
   yad
 )
 
+default["yad"]["zypper"]["enabled"] = true
 default["yad"]["zypper"]["alias"] = "home-tboerger"
-default["yad"]["zypper"]["title"] = "Home of tboerger"
+default["yad"]["zypper"]["title"] = "Home of Thomas Boerger"
 default["yad"]["zypper"]["repo"] = "http://download.opensuse.org/repositories/home:/tboerger/openSUSE_#{node["platform_version"]}/"
 default["yad"]["zypper"]["key"] = "#{node["yad"]["zypper"]["repo"]}repodata/repomd.xml.key"

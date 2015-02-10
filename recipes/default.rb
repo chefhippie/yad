@@ -27,6 +27,10 @@ when "suse"
     title node["yad"]["zypper"]["title"]
 
     action :add
+
+    only_if do
+      node["yad"]["zypper"]["enabled"]
+    end
   end
 end
 
