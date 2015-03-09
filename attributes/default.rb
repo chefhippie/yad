@@ -22,7 +22,7 @@ default["yad"]["packages"] = %w(
 )
 
 default["yad"]["zypper"]["enabled"] = true
-default["yad"]["zypper"]["alias"] = "home-tboerger"
-default["yad"]["zypper"]["title"] = "Home of Thomas Boerger"
-default["yad"]["zypper"]["repo"] = "http://download.opensuse.org/repositories/home:/tboerger/openSUSE_#{node["platform_version"]}/"
+default["yad"]["zypper"]["alias"] = "tboerger-desktop"
+default["yad"]["zypper"]["title"] = "Desktop Tools of Thomas Boerger"
+default["yad"]["zypper"]["repo"] = "http://download.opensuse.org/repositories/home:/tboerger:/desktop/openSUSE_#{node["platform_version"]}/"
 default["yad"]["zypper"]["key"] = "#{node["yad"]["zypper"]["repo"]}repodata/repomd.xml.key"
